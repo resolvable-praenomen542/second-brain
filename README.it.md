@@ -73,19 +73,28 @@ Second Brain è open-source e gratuito per la comunità. Se questo strumento ti 
 ## ❓ FAQ (Domande Frequenti)
 
 **1. È davvero gratuito al 100%?**
-Sì! L'applicazione è open-source e totalmente gratuita. Devi solo creare un account gratuito su Groq per ottenere la tua chiave API, che attualmente offre un piano gratuito estremamente generoso.
+Sì! L'applicazione è open-source e totalmente gratuita. Devi solo creare un account gratuito su Groq per ottenere la tua chiave API.
 
-**2. Il selezionatore può vedere o sentire l'IA?**
-No. Second Brain viene eseguito come una finestra indipendente sul tuo schermo. Non inserisce audio nel tuo microfono e non condivide il tuo schermo. È completamente invisibile all'intervistatore.
+**2. I miei dati sono al sicuro? Salvate il mio curriculum?**
+La tua privacy è la nostra priorità assoluta. Non abbiamo un database. La tua chiave API e il tuo curriculum vengono salvati rigorosamente sul tuo computer (`localStorage`). Nessun dato viene inviato ai nostri server.
 
-**3. I miei dati sono al sicuro? Salvate il mio curriculum?**
-La tua privacy è la nostra priorità assoluta. Non abbiamo un database. La tua chiave API, il tuo curriculum e la descrizione del lavoro vengono salvati rigorosamente nel `localStorage` del tuo computer. Nessun dato viene inviato ai nostri server (perché non ne abbiamo!).
+**3. Qual è il modo migliore per compilare i campi "Curriculum" e "Lavoro"?**
+Basta copiare e incollare l'intero testo grezzo del tuo curriculum (PDF o LinkedIn) e la descrizione del lavoro. Non preoccuparti della formattazione; l'IA di Second Brain organizzerà automaticamente i tuoi dati nella sua memoria per generare risposte con estrema precisione.
 
-**4. Perché l'IA impiega tempo a rispondere?**
-L'IA attende che il selezionatore termini un ragionamento completo prima di generare una risposta. Analizza il contesto a intervalli di 7 secondi per assicurarsi di aver compreso l'intera domanda prima di fornirti lo script.
+**4. Come posso testare il sistema senza essere in un vero colloquio?**
+Puoi testarlo subito! Apri l'app, fai clic su "Ascolta" e riproduci un video di simulazione di colloquio su YouTube, oppure fai semplicemente finta di essere il selezionatore e fai una domanda ad alta voce.
 
-**5. Funziona su Mac o Linux?**
-Attualmente, le versioni automatizzate (Releases) forniscono un programma di installazione `.exe` per Windows. Tuttavia, essendo un'app Electron, puoi clonare facilmente questo repository ed eseguire `npm run dist` per compilare per macOS o Linux.
+**5. Cosa fare se non acquisisce l'audio? (Avviso sulle Cuffie)**
+Second Brain ascolta tramite il microfono predefinito del sistema. Se usi cuffie con cancellazione del rumore, il microfono potrebbe non captare la voce del selezionatore che esce dalle cuffie. **Prova sempre il sistema prima di accedere a qualsiasi colloquio.** Se non capta la voce, usa gli altoparlanti del computer o regola le impostazioni di routing audio del sistema.
+
+**6. Il selezionatore può vedere o sentire l'IA?**
+No. Second Brain viene eseguito come una finestra indipendente. Non inserisce audio nel tuo microfono e non condivide il tuo schermo. È invisibile al 100%.
+
+**7. Perché l'IA impiega alcuni secondi a rispondere?**
+L'IA attende che il selezionatore termini un ragionamento completo prima di generare una risposta. Ascolta in blocchi di 7 secondi per assicurarsi di aver compreso l'intera domanda.
+
+**8. Funziona su Mac o Linux?**
+I programmi di installazione automatici (`.exe`) sono per Windows. Tuttavia, gli sviluppatori possono clonare questo repository ed eseguire `npm run dist` per compilare nativamente per macOS o Linux.
 
 ---
 

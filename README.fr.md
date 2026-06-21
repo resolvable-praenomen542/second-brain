@@ -73,19 +73,28 @@ Second Brain est open-source et gratuit pour la communauté. Si cet outil vous a
 ## ❓ FAQ (Foire Aux Questions)
 
 **1. Est-ce vraiment 100% gratuit ?**
-Oui ! L'application est open-source et totalement gratuite. Il vous suffit de créer un compte gratuit sur Groq pour obtenir votre clé API, qui offre actuellement un forfait gratuit extrêmement généreux.
+Oui ! L'application est open-source et totalement gratuite. Il vous suffit de créer un compte gratuit sur Groq pour obtenir votre clé API.
 
-**2. Le recruteur peut-il voir ou entendre l'IA ?**
-Non. Second Brain s'exécute comme une fenêtre indépendante sur votre écran. Il n'injecte pas d'audio dans votre microphone et ne partage pas votre écran. Il est totalement invisible pour le recruteur.
+**2. Mes données sont-elles en sécurité ? Sauvegardez-vous mon CV ?**
+Votre confidentialité est notre priorité absolue. Nous n'avons pas de base de données. Votre clé API et votre CV sont sauvegardés strictement sur votre propre ordinateur (`localStorage`). Rien n'est envoyé à nos serveurs.
 
-**3. Mes données sont-elles en sécurité ? Sauvegardez-vous mon CV ?**
-Votre confidentialité est notre priorité absolue. Nous n'avons pas de base de données. Votre clé API, votre CV et la description du poste sont sauvegardés strictement dans le `localStorage` de votre propre ordinateur. Rien n'est envoyé à nos serveurs (car nous n'en avons pas !).
+**3. Quelle est la meilleure façon de remplir les champs "CV" et "Poste" ?**
+Copiez et collez simplement tout le texte brut de votre CV (PDF ou LinkedIn) et la description du poste. Ne vous inquiétez pas du formatage ; l'IA de Second Brain organisera automatiquement vos données dans sa mémoire pour générer des réponses avec une précision extrême.
 
-**4. Pourquoi l'IA met-elle du temps à répondre ?**
-L'IA attend que le recruteur termine un raisonnement complet avant de générer une réponse. Elle analyse le contexte par intervalles de 7 secondes pour s'assurer de bien comprendre la question avant de vous fournir le script.
+**4. Comment puis-je tester le système sans être dans un véritable entretien ?**
+Vous pouvez le tester dès maintenant ! Ouvrez l'application, cliquez sur "Écouter" et lancez une vidéo de simulation d'entretien sur YouTube, ou faites simplement semblant d'être le recruteur et posez une question à voix haute.
 
-**5. Cela fonctionne-t-il sur Mac ou Linux ?**
-Actuellement, les versions automatisées (Releases) fournissent un programme d'installation `.exe` pour Windows. Cependant, comme il s'agit d'une application Electron, vous pouvez facilement cloner ce dépôt et exécuter `npm run dist` pour compiler pour macOS ou Linux.
+**5. Que faire s'il ne capte pas l'audio ? (Avis sur les Casques)**
+Second Brain écoute via le microphone par défaut de votre système. Si vous utilisez un casque à réduction de bruit, le microphone risque de ne pas capter la voix du recruteur. **Testez toujours le système avant de participer à un entretien.** S'il ne capte pas la voix, utilisez les haut-parleurs de votre ordinateur ou ajustez les paramètres de routage audio de votre système.
+
+**6. Le recruteur peut-il voir ou entendre l'IA ?**
+Non. Second Brain s'exécute comme une fenêtre indépendante. Il n'injecte pas d'audio dans votre microphone et ne partage pas votre écran. Il est 100% invisible.
+
+**7. Pourquoi l'IA met-elle quelques secondes à répondre ?**
+L'IA attend que le recruteur termine un raisonnement complet avant de générer une réponse. Elle écoute par blocs de 7 secondes pour s'assurer d'avoir compris toute la question.
+
+**8. Cela fonctionne-t-il sur Mac ou Linux ?**
+Les installateurs automatiques (`.exe`) sont pour Windows. Cependant, les développeurs peuvent cloner ce dépôt et exécuter `npm run dist` pour compiler nativement pour macOS ou Linux.
 
 ---
 

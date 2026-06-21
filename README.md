@@ -73,19 +73,28 @@ Second Brain is open-source and free for the community. If this tool helped you 
 ## ❓ FAQ
 
 **1. Is it really 100% free?**
-Yes! The application is open-source and entirely free. You only need to create a free account on Groq to get your API key, which currently offers extremely generous free tiers.
+Yes! The application is open-source and entirely free. You only need to create a free account on Groq to get your API key.
 
-**2. Can the recruiter see or hear the AI?**
+**2. Is my data safe? Do you save my resume?**
+Your privacy is our absolute priority. We do not have a database. Your API key and your resume are saved strictly in your computer's `localStorage`. Nothing is sent to our servers.
+
+**3. What is the best way to fill in the "Resume" and "Job Description" fields?**
+Simply copy and paste the entire raw text of your resume (PDF or LinkedIn) and the job description. Don't worry about formatting; the Second Brain AI will automatically organize your data in its memory to provide highly accurate and contextualized answers.
+
+**4. How can I test the system without being in a real interview?**
+You can test it right now! Just open the app, click "Listen", and play a YouTube video of a mock interview on your speakers, or simply pretend to be the recruiter and ask a question out loud.
+
+**5. What if the system is not capturing audio? (Headset Warning)**
+Second Brain listens to your system's default microphone. If you use noise-canceling headsets, your microphone might not capture the recruiter's voice coming from the headset speakers. **Always test the system before an interview.** If it's not capturing the recruiter's voice, change your computer's audio output to the speakers or adjust your system's audio routing settings.
+
+**6. Can the recruiter see or hear the AI?**
 No. Second Brain runs as an independent window on your screen. It does not inject audio into your microphone feed and does not share your screen. It is completely invisible to the interviewer.
 
-**3. Is my data safe? Do you save my resume?**
-Your privacy is our absolute priority. We do not have a database. Your API key, your resume, and the job description are saved strictly in your computer's `localStorage`. Nothing is sent to our servers (because we don't have any!).
+**7. Why is the AI taking a few seconds to answer?**
+The AI waits for the interviewer to finish a complete thought before generating an answer. It listens in 7-second blocks to ensure it understands the full question before giving you the script.
 
-**4. Why is the AI not answering immediately?**
-The AI waits for the interviewer to finish a complete thought before generating an answer. It analyzes the context in 7-second intervals to ensure it understands the full question before giving you the script.
-
-**5. Does it work on Mac or Linux?**
-Currently, the automated releases provide a `.exe` installer for Windows. However, since it is an Electron app, you can easily clone this repository and run `npm run dist` to build it for macOS or Linux.
+**8. Does it work on Mac or Linux?**
+Currently, the automated releases provide a `.exe` installer for Windows. However, developers can easily clone this repository and run `npm run dist` to build it natively for macOS or Linux.
 
 ---
 
